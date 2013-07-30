@@ -26,4 +26,5 @@ setup(
         'Programming Language :: Python',
         'Environment :: Web Environment',
     ],
+    install_requires=["Django >= 1.5.1", "django_compressor"]
 )
