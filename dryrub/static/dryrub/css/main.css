@@ -460,8 +460,8 @@ form#contact li, #postcardBox form li, #vdayForm li { margin-bottom: 15px;}
 .label-grant { width: 60px; text-align: center; padding: 2px; background: #f2e388; color: black; text-transform: uppercase; font-size: 75%; }
 .label-contract { width: 60px; text-align: center; padding: 2px; background: #efcc01; color: black; text-transform: uppercase; font-size: 75%; }
 .label-loan { width: 60px; text-align: center; padding: 2px; background: #f27e01; color: white; text-transform: uppercase; font-size: 75%; }
-.label-support { width: 60px; text-align: center; padding: 2px; background: #f2e388; color: black; text-transform: uppercase; font-size: 75%; }
-.label-oppose { width: 60px; text-align: center; padding: 2px; background: #f27e01; color: black; text-transform: uppercase; font-size: 75%; }
+.label-support { width: 60px; text-align: center; padding: 2px; background: #0f8c79; color: black; text-transform: uppercase; font-size: 75%; }
+.label-oppose { width: 60px; text-align: center; padding: 2px; background: #c85632; color: black; text-transform: uppercase; font-size: 75%; }
 
 .cell-type { width: 65px; }
 .cell-recipient { width: 165px; }
