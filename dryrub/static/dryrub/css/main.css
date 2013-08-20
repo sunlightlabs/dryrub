@@ -244,13 +244,13 @@ header nav > ul > li > ul {
     border: 1px solid rgba(108, 98, 98, .14);
     background: rgba(255,255,255,0.9);
     padding: 4px 0px 4px 0px;
-    width: 160px;
+    width: 170px;
     display: none;
 }
 header nav > ul > li > ul li a {
     display: block;
     border: 1px solid rgba(0,0,0,0);
-    width: 110px;
+    width: 120px;
     margin-left: -5px;
     padding: 4px 29px 4px 29px;
 }
