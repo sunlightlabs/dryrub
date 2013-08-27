@@ -9,9 +9,9 @@
         <meta name="keywords" content="campaign contributions, sunlight foundation, influence explorer, politics, government, influence" />
         <meta name="description" content="{% block metadesc %}Influence Explorer is the central source for information on money and influence in politics. From here you can explore who the big donors to a politician are, how companies and whole industries spend their political money, and who politically connected individuals have given money to.{% endblock %}" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	
+
         <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
-	
+
         <link rel="icon" href="{% static "dryrub/images/favicon.ico" %}" type="image/x-icon">
         <link rel="canonical" rel="{% block canonicalurl %}{{ request.path }}{% if request.META.QUERY_STRING %}?{{ request.META.QUERY_STRING }}{% endif %}{% endblock %}" />
 
@@ -27,7 +27,7 @@
         <script src="{% static "dryrub/js/jquery-1.10.2.min.js" %}"></script>
         <script src="{% static "dryrub/js/jquery-migrate-1.2.1.min.js" %}"></script>
         <script src="{% static "dryrub/js/jquery-placehold.min.js" %}"></script>
-        
+
         {% block js %}{% endblock %}
 	    {% block og %}
     	    <meta name="og:title" content="Influence Explorer">
@@ -54,9 +54,32 @@
     </head>
 
     <body class="{% block body_class %}search{% endblock %}">
+        <div class="sunlight-branding">
+                    <div class="sunlight-branding-content">
+                        <a href="http://sunlightfoundation.com">A product of Sunlight Foundation</a>
+                    </div>
+        </div>
         <div id="wrapper">
             <div id="pageMain">
                 <header>
+                    <div id="top-nav" class="clear">
+                        <ul>
+                            <li>
+                                <a href="#">About</a>
+                                <ul>
+                                    <li><a href="{{ IE_BASE_URL }}about">About Influence Explorer</a></li>
+                                    <li><a href="{{ IE_BASE_URL }}about/methodology/campaign_finance">Methodology</a></li>
+                                    <li><a href="{{ IE_BASE_URL }}changelog">Changelog</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="{{ IE_BASE_URL }}contact">Contact</a></li>
+                            <li id="share-buttons" class="clear">
+                            <a class="socialite facebook-share" href="http://facebook.com/sharer/sharer.php?">Facebook</a>
+                            <a class="socialite twitter-simple" href="http://twitter.com/share">Twitter</a>
+                            </li>
+                        </ul>
+                    </div>
+
                     {% block search %}
                         <div id="search">
                             <form id="searchForm" action="{{ IE_BASE_URL }}search" method="get">
@@ -90,7 +113,7 @@
                                     <li><a href="{{ IE_BASE_URL }}lobbying-firms">Lobbying Firms</a></li>
                                 </ul>
                             </li>
-                            
+
                             <li id="places">
                                 <a href="#">Places</a>
                                 <ul>
@@ -98,7 +121,7 @@
                                     <li><a href="{{ IE_BASE_URL }}states">States</a></li>
                                 </ul>
                             </li>
-                            
+
                             <li id="people">
                                 <a href="#">People</a>
                                 <ul>
@@ -120,7 +143,7 @@
                                     <li><a href="{{ IE_BASE_URL }}collections/advisory-committees">Advisory Committees</a></li>
                                 </ul>
                             </li>
-                            
+
                             <li id="realtime">
                                 <a href="#">Real Time</a>
                                 <ul>
@@ -139,7 +162,7 @@
                   {% endblock %}
                   <div class="clear"></div>
                 </div>
-                
+
                 <div id="mainContent_bottom"></div>
 
             </div> <!-- end pageMain -->
@@ -192,9 +215,9 @@
             </footer>
 
         </div>
-    
+
     	<img height="1" border="0" width="1" alt="" src="http://ad.doubleclick.net/activity;src=1379696;dcnet=4155;boom=41134;sz=1x1;ord=1?" />
-        
+
         {% compress js %}
         <script type="text/javascript" src="{% static "dryrub/js/jquery.tablesorter.min.js" %}"></script>
         <script type="text/javascript" src="{% static "dryrub/js/jquery.json-2.3.min.js" %}"></script>
@@ -204,12 +227,12 @@
         <script type="text/javascript" src="{% static 'dryrub/js/social/socialite.min.js' %}"></script>
         <script type="text/javascript" src="{% static 'dryrub/js/social/socialite.twitter-simple.js' %}"></script>
         <script type="text/javascript" src="{% static 'dryrub/js/social/socialite.facebook-share.js' %}"></script>
-        
+
         {% block sitejs %}{% endblock %}
         {% endcompress %}
 
         {% block sitejs_uncompressed %}{% endblock %}
-	
+
     	{% block gsfn %}
         <script type="text/javascript" charset="utf-8">
           var is_ssl = ("https:" == document.location.protocol);
@@ -220,7 +243,7 @@
         <script type="text/javascript" charset="utf-8">
           var feedback_widget_options = {};
 
-          feedback_widget_options.display = "overlay";  
+          feedback_widget_options.display = "overlay";
           feedback_widget_options.company = "sunlightfoundation";
           feedback_widget_options.placement = "right";
           feedback_widget_options.color = "#222";
@@ -233,7 +256,7 @@
           Socialite.load($('#share-buttons'));
         </script>
     	{% endblock %}
-	
+
     	<script type="text/javascript">
             var _sf_async_config={uid:980,domain:"influenceexplorer.com"};
             (function(){
@@ -255,7 +278,7 @@
     	<!-- Quantcast Tag -->
     	<script type="text/javascript">
     	var _qevents = _qevents || [];
-	
+
     	(function() {
     	var elem = document.createElement('script');
     	elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
@@ -264,12 +287,12 @@
     	var scpt = document.getElementsByTagName('script')[0];
     	scpt.parentNode.insertBefore(elem, scpt);
     	})();
-	
+
     	_qevents.push({
     	qacct:"p-c3mmNWXstPmj6"
     	});
     	</script>
-	
+
     	<noscript>
     	<div style="display:none;">
     	<img src="//pixel.quantserve.com/pixel/p-c3mmNWXstPmj6.gif" border="0" height="1" width="1" alt="Quantcast"/>
