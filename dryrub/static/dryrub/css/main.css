@@ -144,7 +144,7 @@ div#pageMain, footer { width: 960px; margin: 0 auto; }
     }
 
 /*headers*/
-h1 { float: left; padding-top: 100px; margin-bottom: 5px; width: 440px; height: 61px; margin-left: 10px;}
+h1 { float: left; padding-top: 50px; margin-bottom: 5px; width: 440px; height: 61px; margin-left: 10px;}
 h1 a { color: #000; text-decoration: none; font-size: 470%; text-transform: uppercase; line-height: 70px; text-indent: -9999em; display: block; background: url(../images/logo.png) top left no-repeat; width: 440px; height: 61px;}
 
 h2 { font-family: Impact, Helvetica Neue, Helvetica, Arial, sans-serif; color: #000000; font-size: 380%; line-height: 45px; }
@@ -217,7 +217,7 @@ h6, .h6 { font-size: 110%; font-weight: bold;}
 .searchBox p.description a { float: none; margin-right: 0px; }
 .searchBox p.description, #postcardDescription { font-style: oblique; font-family: Georgia, Times New Roman, Times, serif; color: #827d7d; width: 665px; margin-bottom: 25px;}
 
-#search { float: right; padding-top: 100px; width: 370px;}
+#search { float: right; padding-top: 50px; width: 370px; padding-bottom: 10px;}
 
 dl { margin-top: 15px;}
 .noshow { display: none; }
@@ -231,7 +231,22 @@ table dl { margin-top: 0;}
 table dd { width: 320px;}
 
 /* main nav */
-header nav { background: url(../images/nav_bg.jpg) top left no-repeat; height: 48px; margin: 0 10px;}
+
+#top-nav {
+    width:100%;
+    float:right;
+    height: 48px;
+    margin: 0 10px;
+    }
+header > div#top-nav > ul > li, header > div#top-nav > div{
+    float:right;
+}
+header nav {
+    background: url(../images/nav_bg.jpg) top left no-repeat;
+    height: 48px;
+    margin: 0 10px;
+    }
+
 .flexwidth header nav { background: url(../images/nav_bgFlex.jpg) top left repeat-x; }
 header nav > ul > li {
     float: left;

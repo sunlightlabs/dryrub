@@ -62,7 +62,11 @@
         <div id="wrapper">
             <div id="pageMain">
                 <header>
-                    <div id="top-nav" class="clear">
+                    <div id="top-nav" class="clearfix">
+                        <div id="share-buttons" class="clear">
+                            <a class="socialite facebook-share" href="http://facebook.com/sharer/sharer.php?">Facebook</a>
+                            <a class="socialite twitter-simple" href="http://twitter.com/share">Twitter</a>
+                        </div>
                         <ul>
                             <li>
                                 <a href="#">About</a>
@@ -73,11 +77,9 @@
                                 </ul>
                             </li>
                             <li><a href="{{ IE_BASE_URL }}contact">Contact</a></li>
-                            <li id="share-buttons" class="clear">
-                            <a class="socialite facebook-share" href="http://facebook.com/sharer/sharer.php?">Facebook</a>
-                            <a class="socialite twitter-simple" href="http://twitter.com/share">Twitter</a>
-                            </li>
                         </ul>
+
+
                     </div>
 
                     {% block search %}
@@ -98,10 +100,7 @@
                         </div>
                     {% endblock %}
                     <h1><a id="logo" href="{{ IE_BASE_URL }}">Influence Explorer</a></h1>
-                    <div id="share-buttons" class="clear">
-                        <a class="socialite facebook-share" href="http://facebook.com/sharer/sharer.php?">Facebook</a>
-                        <a class="socialite twitter-simple" href="http://twitter.com/share">Twitter</a>
-                    </div>
+
                     <nav class="clear">
                         <ul>
                             <li id="groups">
@@ -169,6 +168,7 @@
 
             <footer>
                 <div id="footerLinks">
+                    <!--
                     <nav>
                         <ul>
                             <li id="aboutLink"><a href="{{ IE_BASE_URL }}about/">About</a></li>
@@ -176,6 +176,7 @@
                             <li><a href="{{ IE_BASE_URL }}contact/">Contact</a></li>
                         </ul>
                     </nav>
+                    -->
                     <div id="sunlightRequests">
                         <span id="badgeHeader">A Product of the Sunlight Foundation</span>
                         <div id="requestsContent">
