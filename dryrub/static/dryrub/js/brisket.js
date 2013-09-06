@@ -51,8 +51,8 @@ $(function() {
     /* make entity landing pages sortable */
     $(".sortable").tablesorter({ widgets: ['zebra']});
 
-    /* deal with top menu */
-    $("nav > ul > li")
+    /* deal with top menu and other menu */
+    $("nav > ul > li, #top-nav > ul > li")
         .hover(function() {
             $(this).find("ul").fadeIn("fast");
         }, function() {

@@ -240,6 +240,10 @@ table dd { width: 320px;}
     }
 header > div#top-nav > ul > li, header > div#top-nav > div{
     float:right;
+    position: relative;
+}
+header > div#top-nav > ul > li > ul {
+    right: 0;
 }
 header nav {
     background: url(../images/nav_bg.jpg) top left no-repeat;
