@@ -812,3 +812,7 @@ input#id_search {
     font-style: normal;
     font-weight: normal !important;
 }
+
+.chart-canvas text {
+    pointer-events:none;
+}
