@@ -47,6 +47,12 @@ $(function() {
             $(hsh).slideUp("fast");
         }
     );
+    $('body').on('click', function(evt) {
+        var target = $(evt.target);
+        if (!target.is('.descriptor') && !target.is('.descriptorText') && !target.parents('.descriptorText').length) {
+            $('.descriptor.active').click();
+        }
+    })
 
     /* make entity landing pages sortable */
     $(".sortable").tablesorter({ widgets: ['zebra']});
