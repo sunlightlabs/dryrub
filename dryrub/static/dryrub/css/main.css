@@ -813,6 +813,6 @@ input#id_search {
     font-weight: normal !important;
 }
 
-.chart-canvas text {
+text.amount {
     pointer-events:none;
 }
