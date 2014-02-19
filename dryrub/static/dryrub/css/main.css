@@ -64,8 +64,8 @@ html { overflow-y: scroll; }
 iframe { display: block; margin: 10px 0; }
 
 a:hover, a:active { outline: none; }
-a, a:active, a:visited { color: #0a6e92; text-decoration: none;}
-a:hover { color: #0a6e92; }
+a, a:active, a:visited a:link { color: #0a6e92; text-decoration: none;}
+a:hover { color: #0a6e92; text-decoration: underline; }
 
 nav ul, nav li { margin: 0; }
 small { font-size: 85%; }
@@ -114,6 +114,7 @@ div#pageMain, footer { width: 960px; margin: 0 auto; }
 .tip, .searchBox .results, .topPages .results, .help { font-family: Georgia, Times New Roman, Times, serif; font-style: oblique; font-size: 100%; text-transform: lowercase; line-height: 17px; }
 .tip { line-height: 17px; display: block; color: #827d7d; margin-bottom: 25px; max-width: 650px;}
 .moreLink { font-style: italic; font-family: Georgia, Times New Roman, Times, serif; font-size: 120%; margin-bottom: 10px; display: block; background: url(../images/icon_viewMore.jpg) top left no-repeat; padding-left: 30px;}
+.moreLink:hover { border-bottom: 0; text-decoration: underline; }
 
 /* Sunlight Foundation topper */
 
@@ -279,6 +280,7 @@ body.realtime li#realtime > a,
 body.tdata li#data > a {
     border: 1px solid rgba(108, 98, 98, .14);
     background: rgba(90, 157, 141, .14);
+    text-decoration: none;
 }
 nav li#data {
     float: right;
@@ -306,6 +308,7 @@ header nav > ul > li > ul li a, header > div#top-nav > ul > li > ul li a  {
 header nav > ul > li > ul li a:hover, header > div#top-nav > ul > li > ul li a:hover  {
     background: rgba(90, 157, 141, .14);
     border: 1px solid rgba(108, 98, 98, .14);
+    text-decoration: none;
 }
 
 input#id_query { background: url(../images/searchBox.png) top left no-repeat; display: block; width: 261px; height: 37px; margin-right: 10px; padding: 7px 10px 8px; border: none; float: left; font-size: 250%; text-transform: uppercase; font-family: Impact, Helvetica Neue, Helvetica, Arial, sans-serif;}
@@ -598,6 +601,7 @@ dt.moneyTitle { margin-top: 8px;}
 .toggle { background: url(../images/toggle.png) bottom left no-repeat; width: 13px; height: 12px; margin-top: 22px; display: block; text-indent: -9999em; margin: 10px; padding: 0;}
 .toggle.active { background: url(../images/toggle.png) top left no-repeat; }
 .toggle.noshow { background: none;}
+.toggle:hover { border: 0;}
 .regsTip { margin-bottom: 0; padding: 10px; padding-top: 0px; }
 
 .expandDocList {
@@ -669,11 +673,12 @@ table .even.numerous{
 
 #miniNav { background: url(../images/bg_sideNav.png) top left repeat-y; width: 99px; padding: 10px 0; color: #fff; line-height: 15px; font-size: 90%; font-family: Georgia, Times New Roman, Times, serif; font-style: oblique;}
 #miniNav li { margin-bottom: 10px; padding: 0 17px 2px 16px; margin-left: -10px;}
-#miniNav li a { color: #fff; padding-top: 2px; display: block;}
+#miniNav li a { color: #fff; padding-top: 2px; display: block; border: 0; }
+#miniNav li a:hover { text-decoration: none;}
 
 #miniNavWrapper { background: url(../images/bg_miniNavCorner.png) top left no-repeat; padding-top: 6px; z-index: 3; position: absolute; top: 33px; }
 
-#miniNav li.active, #miniNav li:hover { background: url(../images/bg_smNavActive.png) left center no-repeat;  }
+#miniNav li.active, #miniNav li:hover { background: url(../images/bg_smNavActive.png) left center no-repeat; text-decoration: none;  }
 
 .withTip { margin-bottom: 5px; }
 
