@@ -329,6 +329,8 @@ div#mainContent_bottom { background: url(../images/whitebox_bottom.png) center t
 .external { font-family: Georgia, Times New Roman, Times, serif; color: #827d7d; font-size: 85%; font-style: oblique; display: block; margin-top: 5px;}
 .external a { padding-left: 5px; }
 
+.explanatory { font-family: Georgia, Times New Roman, Times, serif; font-style: oblique; display: block; margin-bottom:15px; margin-top: 10px;}
+
 .overviewBar { background: url(../images/overviewBar_2.png) top left repeat; padding-top: 10px; height: 35px; margin: 30px 0 40px; }
 .interiorMethodology { float: left; width: auto; position:relative;}
 
@@ -797,7 +799,8 @@ table .even.numerous{
 .fecStats dd { float: right; text-align: right; width: 50%; font-weight: bold;}
 .fecStats dd span { font-weight: normal;}
 
-.electionHeader { margin-top: 40px; border-bottom: 1px dashed #DCDCD8; margin-bottom: 25px;}
+.electionHeader { margin-top: 60px; border-bottom: 1px dashed #DCDCD8; margin-bottom: 25px;}
+.electionHeader:first-child { margin-top: 40px; }
 .electionHeader h4 { font-weight: bold;}
 .electionHeader .tip { margin-bottom: 5px;}
 
