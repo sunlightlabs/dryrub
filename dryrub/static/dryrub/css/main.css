@@ -270,6 +270,9 @@ header nav > ul > li > a, header > div#top-nav > ul > li > a {
     color: #000000 !important;
     border: 1px solid rgba(0,0,0,0);
 }
+header > div#top-nav > ul > li > a {
+    font-weight: normal !important;
+}
 header nav > ul > li > a:hover,
 header > div#top-nav > ul > li > a:hover,
 body.individual li#people > a,
