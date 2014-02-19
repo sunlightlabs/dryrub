@@ -330,7 +330,7 @@ div#mainContent_bottom { background: url(../images/whitebox_bottom.png) center t
 .external a { padding-left: 5px; }
 
 .overviewBar { background: url(../images/overviewBar_2.png) top left repeat; padding-top: 10px; height: 35px; margin: 30px 0 40px; }
-.interiorMethodology { float: left; width: auto;}
+.interiorMethodology { float: left; width: auto; position:relative;}
 
 .module { padding: 0 40px;}
 .chartModule { padding: 0 5px 30px 40px; }
@@ -379,6 +379,7 @@ div.descriptorText p, div#description p, body.flatText div#mainContent p { margi
 div.descriptorText a { float: none; }
 .individualName { float: left; width: 580px;}
 #individualDisclaimer { float: right; width: 300px;}
+#regulationsDescriptor { right: -5px; }
 #piechart_fec { height: 135px; }
 .section-divider { width: 800px; }
 
