@@ -417,7 +417,7 @@ table#mainPageTable img { border: 2px solid #e0e0df; width: 40px; }
 td.photo { width: 50px;}
 tr#titles th.photo { text-indent: -9999em;}
 
-table#mainPageTable th, #earmarksTable th, #partyTime th, .tab-area table th  {
+table#mainPageTable th, #partyTime th, .tab-area table th, table.ie-data-table th {
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
     	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
     	box-sizing: border-box;         /* Opera/IE 8+ */
@@ -436,6 +436,7 @@ table#mainPageTable th, #earmarksTable th, #partyTime th, .tab-area table th  {
 }
 .mainTable th { padding: 10px;}
 .mainTable, #mainTable { margin-bottom: 55px; border: none;}
+#earmarksTable th { white-space: nowrap; }
 
 .sort {
     background: url(../images/sortArrows.png) 2px center no-repeat;
@@ -606,9 +607,23 @@ dt.moneyTitle { margin-top: 8px;}
 .expandCol { float: left; padding: 10px; }
 .toggle { background: url(../images/toggle.png) bottom left no-repeat; width: 13px; height: 12px; margin-top: 22px; display: block; text-indent: -9999em; margin: 10px; padding: 0;}
 .toggle.active { background: url(../images/toggle.png) top left no-repeat; }
-.toggle.noshow { background: none;}
+.toggle.noshow { background: none; margin: 0; padding: 10px;}
 .toggle:hover { border: 0;}
 .regsTip { margin-bottom: 0; padding: 10px; padding-top: 0px; }
+
+.expandTableHead {
+
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+        -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+        box-sizing: border-box;         /* Opera/IE 8+ */
+
+    border-bottom: solid 1px #DADFDB;
+    background-color: rgba(105,165,159,.17);
+    border-top: solid 1px #DADFDB;
+    border-right: solid 1px #E5EFEE;
+    border-left: solid 1px #E5EFEE;
+    font-weight: bold;
+}
 
 .expandDocList {
     display: none;
