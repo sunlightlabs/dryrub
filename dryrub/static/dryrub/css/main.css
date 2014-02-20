@@ -651,12 +651,6 @@ dt.moneyTitle { margin-top: 8px;}
 #revolvingDoor {
     float:right; font-style: italic; margin-right: 0pt; text-transform: uppercase; font-weight: bold;
 }
-.individual #revolvingDoor{
-    margin-top: 10px;
-}
-.individual #revolvingDoor{
-    margin-top: 10px;
-}
 dl.related{
     margin-top: 0;
 }
