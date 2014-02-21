@@ -40,6 +40,8 @@
 	    {% endblock %}
         <script type="text/javascript" src="http://use.typekit.com/rum2sap.js"></script>
         <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+        
+        {% block head_analytics %}
 	    <script type="text/javascript">
             var _gaq = _gaq || [];
             _gaq.push(['_setAccount', 'UA-1265484-62']);
@@ -51,6 +53,7 @@
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
             })();
         </script>
+        {% endblock %}
     </head>
 
     <body class="{% block body_class %}search{% endblock %}">
@@ -264,6 +267,7 @@
         </script>
     	{% endblock %}
 
+        {% block foot_analytics %}
     	<script type="text/javascript">
             var _sf_async_config={uid:980,domain:"influenceexplorer.com"};
             (function(){
@@ -282,6 +286,7 @@
                  loadChartbeat : function() { oldonload(); loadChartbeat(); };
             })();
         </script>
+
     	<!-- Quantcast Tag -->
     	<script type="text/javascript">
     	var _qevents = _qevents || [];
@@ -306,5 +311,6 @@
     	</div>
     	</noscript>
     	<!-- End Quantcast tag -->
+        {% endblock %}
     </body>
 </html>
