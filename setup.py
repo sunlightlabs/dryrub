@@ -14,6 +14,7 @@ setup(
     author_email='apendleton@sunlightfoundation.com',
     url='http://github.com/sunlightlabs/dryrub/',
     packages=find_packages(),
+    include_package_data=True, # Include files from MANIFEST.in
     license='BSD License',
     platforms=["any"],
     py_modules=["dryrub"],
