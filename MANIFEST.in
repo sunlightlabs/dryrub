@@ -1,0 +1,2 @@
+recursive-include dryrub/static *.css *.js *.png *.jpeg *.jpg *.gif
+recursive-include dryrub/templates *.html
