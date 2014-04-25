@@ -1,5 +1,4 @@
 <!doctype html>
-{% load compress %}
 {% load staticfiles %}
 <html xmlns="http://www.w3.org/1999/xhtml" >
     <head>
@@ -15,10 +14,8 @@
         <link rel="icon" href="{% static "dryrub/images/favicon.ico" %}" type="image/x-icon">
         <link rel="canonical" rel="{% block canonicalurl %}{{ request.path }}{% if request.META.QUERY_STRING %}?{{ request.META.QUERY_STRING }}{% endif %}{% endblock %}" />
 
-        {% compress css %}
         <link rel="stylesheet" href="{% static "dryrub/css/main.css" %}" />
         {% block sitecss %}{% endblock %}
-        {% endcompress %}
 
         <!--[if IE 7]><link rel="stylesheet" href="{% static "dryrub/css/buggy7.css" %}" /><![endif]-->
         <!--[if lt IE 9]>
@@ -217,7 +214,6 @@
 
     	<img height="1" border="0" width="1" alt="" src="http://ad.doubleclick.net/activity;src=1379696;dcnet=4155;boom=41134;sz=1x1;ord=1?" />
 
-        {% compress js %}
         <script type="text/javascript" src="{% static "dryrub/js/jquery.tablesorter.min.js" %}"></script>
         <script type="text/javascript" src="{% static "dryrub/js/jquery.json-2.3.min.js" %}"></script>
         <script type="text/javascript" src="{% static "dryrub/js/underscore-min.js" %}"></script>
@@ -228,7 +224,6 @@
         <script type="text/javascript" src="{% static 'dryrub/js/social/socialite.facebook-share.js' %}"></script>
 
         {% block sitejs %}{% endblock %}
-        {% endcompress %}
 
         {% block sitejs_uncompressed %}{% endblock %}
 
