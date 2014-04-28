@@ -58,6 +58,13 @@ button.disabled { opacity: 0.3; filter: alpha(opacity=30); -ms-filter:"progid:DX
 pre, code, kbd, samp { font-family: monospace, sans-serif; }
 p { margin-bottom: 1.3em;
     font-size: 14px;}
+p.intro {
+        font-size: 119%;
+        font-weight: 200;
+        line-height: 1.8;
+        max-width: 730px;
+}
+
 
 html { overflow-y: scroll; }
 
