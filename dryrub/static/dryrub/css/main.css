@@ -154,6 +154,11 @@ a.sunlight-logo {
 /* to center the branding bar links */
 .branding-bar_links {
     line-height:46px;
+    margin-left: 20px;
+}
+
+.branding-bar_links a {
+    margin-left:12px;
 }
 
 /*headers*/
