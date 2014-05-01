@@ -140,7 +140,7 @@ div#pageMain, footer { width: 960px; margin: 0 auto; }
     height: 46px;
     }
 
-.sunlight-branding a {
+a.sunlight-logo {
     text-indent: -9999em;
     display: block;
     background: url('../images/product-of.png') no-repeat top left;
@@ -150,6 +150,11 @@ div#pageMain, footer { width: 960px; margin: 0 auto; }
     margin-top: 7px;
     margin-right: 30px;
     }
+
+/* to center the branding bar links */
+.branding-bar_links {
+    line-height:46px;
+}
 
 /*headers*/
 h1 { float: left; padding-top: 50px; margin-bottom: 5px; width: 440px; height: 61px; margin-left: 10px;}

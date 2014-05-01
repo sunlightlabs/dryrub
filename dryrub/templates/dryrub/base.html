@@ -1,6 +1,6 @@
 <!doctype html>
 {% load staticfiles %}
-<html xmlns="http://www.w3.org/1999/xhtml" >
+<html xmlns="http://www.w3.org/1999/xhtml" class="bb_wrapper" >
     <head>
         <title>{% block pagetitle %}{% endblock %}Influence Explorer{% block pagetopics %}{% endblock %}</title>
 
@@ -16,6 +16,8 @@
 
         <link rel="stylesheet" href="{% static "dryrub/css/main.css" %}" />
         {% block sitecss %}{% endblock %}
+        <link rel="stylesheet" href="https://sf-icons.s3.amazonaws.com/css/sf-icons.css">
+        <link rel="stylesheet" href="https://sunlight-cdn.s3.amazonaws.com/brandingbar/0.3/css/brandingbar.css">
 
         <!--[if IE 7]><link rel="stylesheet" href="{% static "dryrub/css/buggy7.css" %}" /><![endif]-->
         <!--[if lt IE 9]>
@@ -43,9 +45,19 @@
     </head>
 
     <body class="{% block body_class %}search{% endblock %}">
-        <div class="sunlight-branding">
-                    <div class="sunlight-branding-content">
-                        <a href="http://sunlightfoundation.com">A product of Sunlight Foundation</a>
+        <div class="sunlight-branding" >
+                    <div class="sunlight-branding-content" data-bb-brandingbar="true">
+                        <a href="http://sunlightfoundation.com" class="sunlight-logo">A product of Sunlight Foundation</a>
+                        <div class="branding-bar_links" >
+
+                            <!-- Social Media Icons -->
+                            <a class="social" href="https://www.facebook.com/sunlightfoundation"><span class="icon icon-facebook"></span></a>
+                            <a class="social" href="https://twitter.com/sunfoundation"><span class="sficon sficon-twitter"></span></a>
+                            <a class="social" href="https://plus.google.com/+sunlightfoundation"><span class="icon icon-google-plus"></span></a>
+
+                            <!-- Branding Bar Toggle -->
+                            <a class="branding-bar_trigger" data-bb-toggle=".bb_wrapper" href="http://sunlightfoundation.com/about/">About Sunlight Foundation</a>
+                        </div>
                     </div>
         </div>
         <div id="wrapper">
@@ -307,5 +319,7 @@
     	</noscript>
     	<!-- End Quantcast tag -->
         {% endblock %}
+        <script src="https://sunlight-cdn.s3.amazonaws.com/brandingbar/0.3/js/brandingbar.min.js.gz"></script>
+
     </body>
 </html>
