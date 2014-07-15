@@ -458,9 +458,14 @@ table#mainPageTable th, #partyTime th, .tab-area table th, table.ie-data-table t
 .sort {
     background: url(../images/sortArrows.png) 2px center no-repeat;
     cursor: pointer;
-    }
-table { margin: 15px 0 30px;
-    }
+}
+.sort.headerSortDown {
+    background: url(../images/sortArrows_down.png) 2px center no-repeat;
+}
+.sort.headerSortUp {
+    background: url(../images/sortArrows_up.png) 2px center no-repeat;
+}
+table { margin: 15px 0 30px;}
 
 div.searchBox { width: 880px; margin-bottom: 40px; padding-bottom: 40px; border-bottom: 1px dotted #e6e6e4;}
 body.search dt a { margin-right: 10px;}
