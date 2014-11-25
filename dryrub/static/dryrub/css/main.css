@@ -151,16 +151,6 @@ a.sunlight-logo {
     margin-right: 30px;
     }
 
-/* to center the branding bar links */
-.branding-bar_links {
-    line-height:46px;
-    margin-left: 20px;
-}
-
-.branding-bar_links a {
-    margin-left:12px;
-}
-
 /*headers*/
 h1 { float: left; padding-top: 50px; margin-bottom: 5px; width: 440px; height: 61px; margin-left: 10px;}
 h1 a { color: #000; text-decoration: none; font-size: 470%; text-transform: uppercase; line-height: 70px; text-indent: -9999em; display: block; background: url(../images/logo.png) top left no-repeat; width: 440px; height: 61px;}
