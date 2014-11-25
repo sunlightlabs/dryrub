@@ -135,7 +135,21 @@ div#pageMain, footer { width: 960px; margin: 0 auto; }
     margin-left: auto;
     margin-right: auto;
     height: 46px;
-    }
+}
+
+.branding-bar a.social span[class^="sficon-"] {
+      color: #0a6e92;
+}
+
+.branding-bar a.branding-bar_trigger {
+      color: #0a6e92;
+}
+
+.branding-bar a.branding-bar_trigger:hover, a.branding-bar_trigger:active  {
+      color: #0a6e92;
+      text-decoration: underline;
+}
+
 
 a.sunlight-logo {
     text-indent: -9999em;
