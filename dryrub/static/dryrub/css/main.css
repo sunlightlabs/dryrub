@@ -126,11 +126,8 @@ div#pageMain, footer { width: 960px; margin: 0 auto; }
 /* Sunlight Foundation topper */
 
 
-.sunlight-branding {
-    height: 46px;
-    background: url('../images/sunlight_stripe.png') repeat-x top left;
-    position: relative;
-    width: 100%;
+.branding-bar {
+    background: url('../images/sunlight_stripe.png') repeat-x top left !important;
 }
 
 .branding-bar_container {
