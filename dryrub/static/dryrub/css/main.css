@@ -150,6 +150,17 @@ div#pageMain, footer { width: 960px; margin: 0 auto; }
       text-decoration: underline;
 }
 
+.bb-modal_donation label {
+    width: auto;
+    color: inherit;
+    float: none;
+    display: auto;
+}
+.bb-modal_donation input:invalid {
+    border-radius: 0;
+    box-shadow: none;
+}
+
 
 a.sunlight-logo {
     text-indent: -9999em;
