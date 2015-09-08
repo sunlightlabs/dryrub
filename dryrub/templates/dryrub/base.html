@@ -67,7 +67,8 @@
                     </div>
 
                     {% block search %}
-                        <div id="search">
+                        <!--
+                            <div id="search">
                             <form id="searchForm" action="{{ IE_BASE_URL }}search" method="get">
                                 {% if search_form %}
                                     {{ search_form.query }}
@@ -82,12 +83,13 @@
                             <div class="clear"></div>
                             <span class="tip">Enter a politician, company or individual donor</span>
                         </div>
+                        -->
                     {% endblock %}
                     <h1><a id="logo" href="{{ IE_BASE_URL }}">Influence Explorer</a></h1>
 
                     <nav class="clear">
                         <ul>
-                            <li id="groups">
+                            <!-- <li id="groups">
                                 <a href="#">Groups</a>
                                 <ul>
                                     <li><a href="{{ IE_BASE_URL }}industries">Industries</a></li>
@@ -96,6 +98,7 @@
                                     <li><a href="{{ IE_BASE_URL }}lobbying-orgs">Lobbying Orgs</a></li>
                                 </ul>
                             </li>
+                            -->
 
                             <!--
                             <li id="places">
@@ -107,6 +110,7 @@
                             </li>
                             -->
 
+                            <!--
                             <li id="people">
                                 <a href="#">People</a>
                                 <ul>
@@ -115,6 +119,7 @@
                                     <li><a href="{{ IE_BASE_URL }}politicians">Politicians</a></li>
                                 </ul>
                             </li>
+                            -->
                             
                             <!--
                             <li id="collections">
@@ -131,13 +136,18 @@
                             </li>
                             -->
 
-                            <li id="realtime">
-                                <a href="#">Real-Time</a>
+                            <li id="campaign_finance">
+                                <a href="#">Campaign Finance</a>
                                 <ul>
                                     <li><a href="http://realtime.influenceexplorer.com/">Federal Campaign Finance</a></li>
+                                </ul>
+                            <li id="campaign_finance">
+                                <a href="#">Lobbying</a>
+                                <ul>
                                     <li><a href="http://lobbying.influenceexplorer.com/lobbying/registrations">Lobbying Registrations</a></li>
                                     <li><a href="http://lobbying.influenceexplorer.com/post-employment">Post-Employment Notifications</a></li>
                                 </ul>
+                            </li>
                             </li>
                            <li id="foreign">
                                 <a href="http://foreign.influenceexplorer.com/">Foreign</a>
